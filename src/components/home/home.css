@@ -1,0 +1,353 @@
+.home__title {
+    font-size: 770%;
+    margin-bottom: 0.25em;
+    font-weight: bold;
+    line-height: 0.8;
+    white-space: wrap;
+    text-align: left;
+}
+
+.title {
+    font-size: 120%;
+    margin-bottom: 0.25em;
+    font-weight: bold;
+    line-height: 0.8;
+    white-space: wrap;
+    text-align: left;
+}
+
+.home.section {
+    margin-bottom: 10%;
+}
+
+.home__subtitle {
+    position: relative;
+    font-size: 400%;
+    padding-left: 3rem;
+    font-weight: bold;
+    margin-top: 20px;
+    line-height: 0.8;
+    margin-bottom: var(--mb-1);
+    white-space: nowrap;
+    color: rgb(116, 116, 116);
+}
+
+.home__description {
+    margin-bottom: var(--mb-3);
+    position: relative;
+    padding-left: 20rem;
+    font-size: 30px;
+    color: black;
+    white-space: nowrap;
+}
+
+.home__social {
+    position: relative;
+    display: absolute;
+    height: 100%;
+    grid-template-columns: max-content;
+    row-gap: 0.8rem;
+}
+
+.home__social-icon {
+    font-size: 1.25rem;
+    color: var(--title-color);
+}
+
+@media (max-width: 1200px) {
+    .home__title {
+        font-size: 100px;
+    }
+    .home__subtitle {
+        font-size: 60px;
+        padding-left: 2rem;
+    }
+    .home__description {
+        padding-left: 200px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .home__content {
+        grid-template-columns: 100px repeat(2, 1fr);
+        column-gap: 1.25rem;
+    }
+
+    .home__hand {
+        width: 26px;
+        height: 26px;
+    }
+
+    .home__title {
+        font-size: 80px; /* Adjusted font size */
+    }
+
+    .home__subtitle {
+        font-size: 50px; /* Adjusted font size */
+        padding-left: 1.5rem;
+    }
+
+    .home__img {
+        width: 250px;
+        height: 250px;
+        box-shadow: inset 0 0 0 8px rgb(225 225 225 / 30%);
+    }
+
+    .home__scroll {
+        margin-left: 7.5rem;
+    }
+
+    .home_social {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home__content {
+        grid-template-columns: 0.5fr 3fr;
+        padding-top: -100%;
+    }
+
+    .home__title {
+        font-size: 700%; /* Adjusted font size */
+        position: relative;
+        right: 300%;
+        bottom: 50%;
+    }
+
+    .home__subtitle {
+        font-size: 400%; /* Adjusted font size */
+    }
+
+    .home__description {
+        white-space: nowrap;
+        /* Optional: Add ellipsis for overflowed text */
+        font-size: 150%;
+        margin-left: -1100%;
+      }
+
+    .home__img {
+        order: initial;
+        justify-self: initial;
+        box-shadow: inset 0 0 0 6px rgb(225 225 225 / 30%);
+        width: 200px;
+        height: 200px;
+    }
+
+    .home__data {
+        grid-column: 1;
+    }
+
+    .home__scroll {
+        display: none;
+    }
+
+    .home__social {
+        display: none;
+    }
+
+    .home__content {
+        position: relative;
+        bottom: 17%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title{
+        width: 350px;
+        line-height: 5rem;
+    }
+    .home__title {
+        font-size: 450%; /* Adjusted font size */
+        position: relative;
+        right: 215%;
+    }
+    
+
+    .home__subtitle {
+        font-size: 300%; /* Adjusted font size */
+        position: relative;
+        right: 215%;
+    }
+
+    .home__description {
+        font-size: 100%; /* Adjusted font size */
+        position: relative;
+        right: 200%;
+      }
+    
+    .button {
+        position: relative;
+        right: 190%;
+        size: 0rem;
+    }
+
+    .home__content {
+        position: relative;
+        bottom: 20%;
+    }
+
+    
+}
+
+@media screen and (max-width: 440px) {
+    .home__title {
+        font-size: 450%; /* Adjusted font size */
+        text-align: left; /* Align text to the center */
+        margin: 0 auto; /* Center the element itself */
+        width: 90%; /* Ensure the element takes full width */
+        max-width: 350px; /* Set a maximum width to prevent text from spreading too much */
+        padding: rem 2rem; /* Adjust padding to fit smaller screens */
+    }
+
+    .home__subtitle {
+        font-size: 250%; /* Adjusted font size */
+        text-align: center; /* Align text to the center */
+        margin: 0 auto; /* Center the element itself */
+        width: 90%; /* Ensure the element takes full width */
+        max-width: 350px; /* Set a maximum width to prevent text from spreading too much */
+        padding: 1rem 2rem; /* Adjust padding to fit smaller screens */
+    }
+
+    .home__description {
+        font-size: 100%; /* Adjusted font size */
+        text-align: center; /* Align text to the center */
+        margin: 0 auto; /* Center the element itself */
+        width: 90%; /* Ensure the element takes full width */
+        max-width: 350px; /* Set a maximum width to prevent text from spreading too much */
+        padding: 1rem 2rem; /* Adjust padding to fit smaller screens */
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .home__title {
+        font-size: 395%; /* Adjusted font size */
+        text-align: left; /* Align text to the center */
+        margin: 0 auto; /* Center the element itself */
+        width: 90%; /* Ensure the element takes full width */
+        max-width: 350px; /* Set a maximum width to prevent text from spreading too much */
+        padding: rem 2rem; /* Adjust padding to fit smaller screens */
+    }
+
+    .home__subtitle {
+        font-size: 250%; /* Adjusted font size */
+        text-align: center; /* Align text to the center */
+        margin: 0 auto; /* Center the element itself */
+        width: 90%; /* Ensure the element takes full width */
+        max-width: 350px; /* Set a maximum width to prevent text from spreading too much */
+        padding: 1rem 2rem; /* Adjust padding to fit smaller screens */
+    }
+
+    .home__description {
+        font-size: 80%; /* Adjusted font size */
+        text-align: center; /* Align text to the center */
+        margin: 0 auto; /* Center the element itself */
+        width: 90%; /* Ensure the element takes full width */
+        max-width: 350px; /* Set a maximum width to prevent text from spreading too much */
+        padding: 1rem 2rem; /* Adjust padding to fit smaller screens */
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .home__title {
+        font-size: 400%; /* Adjusted font size */
+        text-align: left; /* Align text to the center */
+        margin: 0 auto; /* Center the element itself */
+        width: 90%; /* Ensure the element takes full width */
+        max-width: 320px; /* Set a maximum width to prevent text from spreading too much */
+        padding: 0rem 0rem; /* Adjust padding to fit smaller screens */
+    }
+
+    .home__subtitle {
+        font-size: 200%; /* Adjusted font size */
+        text-align: center; /* Align text to the center */
+        margin: 0 auto; /* Center the element itself */
+        width: 90%; /* Ensure the element takes full width */
+        max-width: 320px; /* Set a maximum width to prevent text from spreading too much */
+        padding: 1rem 2rem; /* Adjust padding to fit smaller screens */
+    }
+
+    .home__description {
+        font-size: 80%; /* Adjusted font size */
+        text-align: center; /* Align text to the center */
+        margin: 0 auto; /* Center the element itself */
+        width: 90%; /* Ensure the element takes full width */
+        max-width: 320px; /* Set a maximum width to prevent text from spreading too much */
+        padding: 1rem 2rem; /* Adjust padding to fit smaller screens */
+    }
+
+    .button button--flex {
+        height: 20px;
+        width: 20px;
+    }
+
+    .home.section {
+        margin-bottom: -6rem;
+    }
+
+}
+
+.home__container {
+    row-gap: 7rem;
+}
+
+.home__content {
+    grid-template-columns: 20px repeat(2, 1fr);
+    padding-top: 5.5rem;
+    padding-left: 0%;
+    align-items: center;
+}
+
+.home__social-icon:hover {
+    color: var(--title-color-dark);
+}
+
+.home__data {
+    display: inline-block;
+    min-height: 200px;
+    position: left;
+}
+
+.home__img {
+    background: url(../../assets//profileBW.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* filter: grayscale(.5); */
+    box-shadow: inset 0 0 0 9px rgb(225 225 225 / 30%);
+    order: 1;
+    justify-self: center;
+    width: 300px;
+    height: 300px;
+    animation: profile__animate 8s ease-in-out infinite 1s;
+}
+
+@keyframes profile__animate {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+.home__scroll {
+    margin-left: 9.25rem;
+}
+
+.wheel {
+    animation: scroll 2s ease infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(3.75rem);
+    }
+}

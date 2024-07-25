@@ -1,0 +1,205 @@
+.about__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+}
+
+.about__textbox {
+    grid-column: 1 / span 2;
+    margin: 0%;
+}
+
+.about__img {
+    width: 350px;
+    border-radius: 1.5rem;
+    justify-self: center;
+}
+
+.about__info {
+    grid-template-columns: repeat(3, 140px);
+    gap: 0.5rem;
+    margin-bottom: var(--mb-2);
+}
+
+.about__text {
+    color: black;
+    font-size: clamp(120%, 120%, 50%);
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2rem 4rem;
+    border-radius: 1.25rem;
+}
+
+.about__box {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 12);
+    border-radius: 0.75rem;
+    text-align: center;
+    padding: 1rem 1.25rem;
+}
+
+.about__icon {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    margin-bottom: var(--mb-0-5);
+}
+
+.about__title {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    
+}
+
+.section__title {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+}
+
+.about__subtitle {
+    font-size: var(--small-font-size);
+}
+
+.about__subtitle1 {
+    font-size: 80%;
+}
+
+.about__description {
+    padding: 0 -0%  0;
+    margin-bottom: var(--mb-2-5);
+}
+
+.cv__button {
+    display: inline-block;
+    background-color: var(--title-color);
+    color: var(--container-color);
+    padding: 1.25rem 9.2rem;
+    border-radius: 1rem;
+    font-weight: var(--font-medium);
+    text-align: center;
+}
+
+.cv__button:hover {
+    background-color: var(--title-color-dark);
+}
+
+/* BREAK POINTS */
+@media screen and (max-width: 992px) {  
+    .about__container {
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem;
+    }
+
+    .about__img {
+        width: 220px;
+    }
+
+    .about__box {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .about__data {
+        text-align: center;
+    }
+
+    .about__info {
+        justify-content: center;
+    }
+
+    .about__description {
+        padding: 0 5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about__info {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about__description {
+        padding: 0;
+    }
+    
+    
+
+    .about__text {
+        color: black;
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .about__info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about__container {
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem;
+    }
+
+    .section__title {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        column-gap: 4rem;
+    }
+
+    .about__text {
+            color: black;
+            font-size: 88%;
+            text-align: left; /* Align text to the center */
+            margin: 0rem 0rem; /* Center the element itself */
+            max-width: 320px; /* Set a maximum width to prevent text from spreading too much */
+            padding: 1rem; /* Adjust padding to fit smaller screens */
+    }
+
+    .about {
+        padding: 0 ;
+    }
+
+    .cv__button {
+        padding: 0.75rem 4rem; /* Adjust the padding to make the button smaller */
+        font-size: 90%; /* Optional: Adjust font size to better fit the smaller button */
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .about__info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about__container {
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem;
+    }
+
+    .about__text {
+        color: black;
+        font-size: 80%;
+        text-align: left; /* Align text to the center */
+        margin: 0rem 0rem; /* Center the element itself */
+        width: 120%; /* Ensure the element takes full width */
+        max-width: 320px; /* Set a maximum width to prevent text from spreading too much */
+        padding: 1rem 0rem; /* Adjust padding to fit smaller screens */
+    }
+
+    .about {
+        padding: 0 1rem;
+    }
+
+    .cv__button {
+        padding: 0.75rem 3rem; /* Further adjust the padding to make the button smaller */
+        font-size: 85%; /* Optional: Adjust font size to better fit the smaller button */
+    }
+
+    .about.about.section {
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .section__title {
+        text-align: right;
+        column-gap: 4rem;
+    }
+}

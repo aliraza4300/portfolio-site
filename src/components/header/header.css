@@ -1,0 +1,208 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: transparent; /* Ensure the background is transparent */
+    border: none; /* Remove any border */
+    box-shadow: none; /* Remove any box-shadow */
+    margin: 0; /* Ensure no margin */
+    padding: 0; /* Ensure no padding */
+}
+
+.nav {
+    height: calc(var(--header-height) + 4rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.nav__logo, {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    font-size: 35px;
+    text-align: right-corner;
+}
+
+.nav__toggle {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    font-size: 80px;
+    position: absolute;
+    left: 89%;
+    bottom: 1580%;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 10px; /* Adjusted gap value */
+}
+
+.nav__logo {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    font-size: 35px;
+    text-align: left-corner;
+    transition: opacity 0.3s ease-in-out; /* Add transition for opacity */
+    opacity: 1; /* Ensure initial opacity is set */
+}
+
+.scrolled-logo {
+    /* Add any styles you want to apply when the logo is in the scrolled state */
+    font-size: 30px;
+    position: relative;
+    left: 30px;
+    font-weight: 30px; 
+}
+
+
+.nav__link {
+    font: Inter;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    position: relative;
+}
+
+.nav__link::before {
+    content: "";
+    position: absolute;
+    width: 0; /* Start with no width */
+    height: 1px;
+    bottom: -1px;
+    left: 0;
+    background-color: rgb(0, 0, 0); /* Adjust the color as needed */
+    transition: width 0.3s ease-in-out; /* Smooth transition for width */
+}
+
+.nav__link:hover::before {
+    width: 100%; /* Expand to full width on hover */
+}
+
+.nav__icon, .nav__close, .nav__toggle {
+    display: none;
+}
+
+
+/* CHANGE HEADER */
+.scroll-header {
+    box-shadow: none;
+     /* Remove the box shadow when scrolling */
+}
+
+.navbar_slash {
+    font-size: 22px;
+}
+
+/* BREAK POINTS */
+@media screen and (max-width: 768px) {
+    .header {
+        top: initial;
+        bottom: 0;
+        border: none; /* Remove any border */
+        box-shadow: none; /* Remove any box-shadow */
+    }
+
+    .nav {
+        height: var(--header-height);
+        border: none; /* Remove any border */
+        box-shadow: none; /* Remove any box-shadow */
+        margin: 0; /* Remove any margin */
+    }
+
+    .nav__menu {
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--body-color);
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: none; /* Remove any box-shadow */
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: .3s;
+        gap: 20px;
+    }
+
+    .show-menu {
+        bottom: 0;
+    }
+
+    .nav__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .nav__logo {
+        display: none;
+    }
+
+    .navbar_slash{
+        display: none;
+    }
+    .home__social {
+        border: none; /* Remove any border */
+        box-shadow: none; /* Remove any box-shadow */
+        margin: 0; /* Ensure no margin */
+        padding: 0; /* Ensure no padding */
+    }
+
+    .nav__icon {
+        font-size: 1.2rem;
+    }
+
+    .nav__close {
+        align-items: flex-end;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--title-color);
+    }
+
+    .nav__close:hover {
+        color: var(--title-color-dark);
+    }
+
+
+    .nav__icon, .nav__close, .nav__toggle {
+        display: block;
+    }
+
+    .nav__toggle {
+        color: var(--title-color);
+        font-weight: var(--font-medium);
+        font-size: 55px;
+        position: fixed; /* Make it fixed to the viewport */
+        top: 0;
+        right: 0; /* Adjust as needed */
+        left: initial !important; /* Adjust as needed */
+        opacity: 1;
+    }
+
+    
+}
+
+@media screen and (max-width: 350px) {
+    .nav__menu {
+        padding: 2rem 0.25rem 4rem;
+    }
+
+    .nav__list {
+        column-gap: 0;
+    }
+
+
+    .nav__toggle {
+        color: var(--title-color);
+        font-weight: var(--font-medium);
+        font-size: 55px;
+        position: fixed; /* Make it fixed to the viewport */
+        top: -8px;
+        left: 85%; /* Adjust as needed */
+        opacity: 1;
+    }
+
+}   
